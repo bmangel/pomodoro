@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #2d3748;
+}
+
+.timer-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 3rem 4rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #1a202c;
+    font-weight: 600;
+}
+
+.timer {
+    font-size: 6rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    color: #2d3748;
+    font-variant-numeric: tabular-nums;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: white;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button#start {
+    background-color: #4CAF50;
+}
+
+button#start:hover {
+    background-color: #45a049;
+}
+
+button#reset {
+    background-color: #f44336;
+}
+
+button#reset:hover {
+    background-color: #e53935;
+}
+
+button#add-time {
+    background-color: #9C27B0;
+}
+
+button#add-time:hover {
+    background-color: #8E24AA;
+}
+
+button#mode {
+    background-color: #2196F3;
+}
+
+button#mode:hover {
+    background-color: #1E88E5;
+}
+
+@media (max-width: 600px) {
+    .timer-container {
+        padding: 2rem;
+        margin: 1rem;
+    }
+    
+    .timer {
+        font-size: 4rem;
+    }
+    
+    .buttons {
+        flex-wrap: wrap;
+    }
+    
+    button {
+        flex: 1 1 calc(50% - 0.5rem);
+    }
+} 
